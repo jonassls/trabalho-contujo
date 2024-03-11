@@ -1,2 +1,1 @@
 # trabalho-contujo
-Uriel Montanha
