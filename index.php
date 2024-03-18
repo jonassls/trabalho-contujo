@@ -15,20 +15,24 @@ $sql = "SELECT `Nome`,`Quantidade` FROM `produtos`";
 <body>
     <fieldset><legend><h1>Lista de Produtos</h1></legend>
 
-<table>
-  <tr>
-    <th> Produtos </th>
-    <th> Quantidade produtos </th>
-  </tr>
-  <tr>
-    <td>ppp</td>
-    <td>ddd</td>
-  </tr>
-  <tr>
-    <td>jjj</td>
-    <td>ggg</td>
-  </tr>
-</table>
+
+  <?php
+
+  echo "<table>
+        <tr>
+          <th> Produtos </th>
+          <th> Quantidade produtos </th>
+        </tr>
+        <tr>
+          <td>"; echo "SELECT FROM `nome`"; echo "</td>
+          <td>"; echo "SELECT FROM `nome`"; echo "</td>
+        </tr>
+        <tr>
+          <td>"; echo "SELECT FROM `quantidade`"; echo "</td>
+          <td>"; echo "SELECT FROM `quantidade`"; echo "</td>
+        </tr>
+        </table>";
+  ?>
 
 
   </fieldset>
