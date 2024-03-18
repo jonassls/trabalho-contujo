@@ -35,4 +35,3 @@ $sql = "SELECT `Nome`,`Quantidade` FROM `produtos`";
 
 </body>
 </html>
-l
