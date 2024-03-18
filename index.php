@@ -13,6 +13,7 @@ include("conecta.php");
 <body>
     <fieldset><legend><h1>Lista de Produtos</h1></legend>
 
+<<<<<<< HEAD
 <table>
   <tr>
     <th> Produtos </th>
@@ -46,10 +47,7 @@ include("conecta.php");
     <td>ggg</td>
   </tr>
 </table>
-
-
   </fieldset>
 
 </body>
 </html>
-l
