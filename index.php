@@ -1,3 +1,10 @@
+<?php
+include "conexao.php";
+$sql = "SELECT `Nome`,`Quantidade` FROM `produtos`";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,27 +15,10 @@
 <body>
     <fieldset><legend><h1>Lista de Produtos</h1></legend>
 
-    <table>
-  <caption>
-    Front-end web developer course 2021
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Person</th>
-      <th scope="col">Most interest in</th>
-      <th scope="col">Age</th>
-    </tr>
-  </thead>
-  
-</table>
 
-<?php
-include "conexao.php";
-$sql = "SELECT `Nome`,`Quantidade` FROM `produtos`";
 
-?>
 
-</fieldset>
+  </fieldset>
 
 </body>
 </html>
