@@ -1,7 +1,5 @@
 <?php
-include "conexao.php";
-$sql = "SELECT `Nome`,`Quantidade` FROM `produtos`";
-
+include("conecta.php");
 ?>
 
 
@@ -18,11 +16,30 @@ $sql = "SELECT `Nome`,`Quantidade` FROM `produtos`";
 <table>
   <tr>
     <th> Produtos </th>
-    <th> Quantidade produtos </th>
+    <th> Quantidade </th>
   </tr>
   <tr>
-    <td>ppp</td>
-    <td>ddd</td>
+    
+
+
+    <td><?php
+    $sql = "SELECT Nome FROM produtos WHERE id=1000";
+  $resultado = mysqli_query($conexao, $sql);
+  $dados = mysqli_fetch_assoc($resultado);
+
+  echo ''.$dados['Nome'].'';
+  ?>
+  </td>
+    <td><?php
+    $sql = "SELECT Quantidade FROM produtos WHERE id=1000";
+  $resultado = mysqli_query($conexao, $sql);
+  $dados = mysqli_fetch_assoc($resultado);
+
+  echo ''.$dados['Quantidade'].'';
+  ?></td>
+
+
+
   </tr>
   <tr>
     <td>jjj</td>
